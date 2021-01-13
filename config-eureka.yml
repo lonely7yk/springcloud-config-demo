@@ -26,14 +26,14 @@ server:
   port: 7002
 
 spring:
-  profiles: test
+  profiles: eureka7002
   application:
     name: springcloud-config-eureka-7002
 
 # Eureka 配置
 eureka:
   instance:
-    hostname: eureka7001 # Eureka 服务端的实例名称
+    hostname: eureka7002 # Eureka 服务端的实例名称
   client:
     register-with-eureka: false # 表示是否向 eureka 注册中心注册自己（服务端不需要）
     fetch-registry: false # false 表示自己为注册中心
@@ -45,14 +45,14 @@ server:
   port: 7003
 
 spring:
-  profiles: test
+  profiles: eureka7003
   application:
     name: springcloud-config-eureka-7003
 
 # Eureka 配置
 eureka:
   instance:
-    hostname: eureka7001 # Eureka 服务端的实例名称
+    hostname: eureka7003 # Eureka 服务端的实例名称
   client:
     register-with-eureka: false # 表示是否向 eureka 注册中心注册自己（服务端不需要）
     fetch-registry: false # false 表示自己为注册中心
